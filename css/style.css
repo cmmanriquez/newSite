@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* fonts 
+'Spectral', serif;
+'Syne', sans-serif;
+'Cormorant Infant', serif;
+*/
+
+
+/* index */
+
+/* navbar */
+.container__index-header{
+    background-image: url(../img/cover.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.container__index-nav{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+.navbar__modificada{
+    justify-content: space-between;
+}
+.navbar__modificada a{
+    font-family: 'Syne', sans-serif;
+    color: black;
+}
+.navbar__modificada-brand{
+    margin-left: 30px;
+}
+.navbar__toggle-modificado{
+    background-image: url(../img/rainbow-solid.svg);
+}
+.navbar__modificada-links{
+    margin-right: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* wave text animation */
+.container__index-waveAnimation svg text textPath{
+    font-family: 'Cormorant Infant', serif;
+}
