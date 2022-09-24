@@ -4,14 +4,14 @@
 }
 /* fonts 
 'Spectral', serif;
-'Syne', sans-serif;
 'Cormorant Infant', serif;
+'Inter Tight', sans-serif;
 */
 
 
-/* index */
+/* ------------index------------ */
 
-/* navbar */
+/* --------navba-------- */
 .container__index-header{
     background-image: url(../img/cover.jpg);
     background-size: cover;
@@ -25,12 +25,20 @@
 .navbar__modificada{
     justify-content: space-between;
 }
-.navbar__modificada a{
+.navbar__modificada div ul li a{
     font-family: 'Syne', sans-serif;
     color: black;
 }
 .navbar__modificada-brand{
+    font-size: 36px;
+    font-weight: 200;
+    text-decoration: none;
+    color: black;
+    font-family: 'Spectral';
     margin-left: 30px;
+}
+.navbar__modificada div ul li a:hover, .navbar__modificada-brand:hover{
+    color: rgb(88, 87, 87);
 }
 .navbar__toggle-modificado{
     background-image: url(../img/rainbow-solid.svg);
@@ -39,7 +47,86 @@
     margin-right: 30px;
 }
 
+/* --------img index-------- */
+.index__header-img01{
+    position: absolute;
+    top: 150px;
+    left: 70px;
+    opacity: 0;
+}
+.index__header-img02{
+    position: absolute;
+    top: 250px;
+    right: 200px;
+    opacity: 0;
+}
+.index__header-img01:hover, .index__header-img02:hover{
+    opacity: 1;
+}
 
+/* --------txt wave-------- */
+.container__index-waveAnimation{
+    margin: 150px 0;
+}
+
+/* --------about-------- */
+.container__index-about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.container__index-about video{
+    margin-left: 60px;
+}
+.container__index-about p{
+    font-size: 30px;
+    font-family: 'Inter Tight';
+    font-weight: 300;
+    padding: 0 70px;
+}
+
+/* --------banner imágenes-------- */
+.container__index-bannerImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 150px;
+}
+
+/* --------contacto-------- */
+.container__index-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+}
+.container__index-form h2{
+    font-family: 'Spectral';
+    text-align: center;
+    font-weight: 300;
+}
+.form-btn{
+    width: 70px;
+    margin: 0 auto;
+}
+
+/* --------RRSS-------- */
+.container__index-rrss{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 5px;
+}
+.container__index-rrss i{
+    font-size: 28px;
+    color: black;
+}
+.container__index-rrss i:hover{
+    color: grey;
+}
 
 
 

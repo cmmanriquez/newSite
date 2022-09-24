@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/b962fa32af.js" crossorigin="anonymous"></script>
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Syne:wght@400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500&family=Inter+Tight:wght@100;200;300&family=Spectral:wght@200&display=swap" rel="stylesheet">
     <!-- BS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>Spencer</title>
+    <title>Proyecto Spencer | Art & Web developing</title>
 </head>
-
 <body>
     <header class="container__index-header">
     </header>
+    <img class="index__header-img01" src="./img/indexSegundo01.gif" alt="">
+    <img class="index__header-img02" src="./img/indexSegundo02.gif" alt="">
     <!-- navbar -->
     <div class="container__index-nav">
         <nav class="navbar navbar-expand-lg navbar__modificada">
-            <a class="navbar-brand navbar__modificada-brand" href="index.html">Spencer</a>
+            <a class="navbar__modificada-brand" href="index.html">Spencer</a>
             <div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -67,7 +67,35 @@
         </svg>
     </div>
 
+    <section class="container__index-about">
+        <video src="./img/autorretratoLG.mp4" autoplay loop></video>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum eius voluptatem tempore. Modi quos non totam, dignissimos, quo ipsum, accusamus adipisci nemo nulla similique ad necessitatibus. Alias quos quibusdam, nihil accusamus veniam obcaecati illo suscipit sit eum sequi commodi voluptatibus!</p>
+    </section>
 
+    <section class="container__index-bannerImg">
+        <img src="./img/indexTercer01.jpg" alt="">
+        <img src="./img/indexTercer02.jpg" alt="">
+        <img src="./img/indexTercer03.jpg" alt="">
+        <img src="./img/indexTercer04.jpg" alt="">
+    </section>
+
+    <footer>
+        <form class="container__index-form" action="get">
+            <h2>lets work together</h2>
+            <label for="name">nombre</label>
+            <input type="text">
+            <label for="email">mail</label>
+            <input type="email" name="mail" id="">
+            <label for="message">mensaje</label>
+            <textarea name="message" id="" cols="50" rows="6" style="resize:none;"></textarea>
+            <input class="form-btn" type="submit" value="enviar"/>
+        </form>
+        <div class="container__index-rrss">
+            <a href="https://www.linkedin.com/in/camilamunoz-frontend/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://vimeo.com/britanyspencer" target="_blank"><i class="fa-brands fa-vimeo-v"></i></a>
+            <a href="https://github.com/cmmanriquez" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
 
 
 

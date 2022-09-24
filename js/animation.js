@@ -1,3 +1,4 @@
+//animación de letras wave
 const textPath = document.querySelector('#text-path');
 
 const textContainer = document.querySelector('#text-container');
@@ -25,3 +26,4 @@ function update() {
 }
 
 window.requestAnimationFrame(update);
+
