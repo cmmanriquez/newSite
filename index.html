@@ -10,7 +10,7 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500&family=Inter+Tight:wght@100;200;300&family=Spectral:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500&family=Inter+Tight:wght@100;200;300&family=Spectral:wght@200;300;400;500&display=swap" rel="stylesheet">
     <!-- BS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- CSS -->
@@ -18,14 +18,17 @@
     <title>Proyecto Spencer | Art & Web developing</title>
 </head>
 <body>
-    <header class="container__index-header">
+    <header id="up" class="container__index-header">
     </header>
-    <img class="index__header-img01" src="./img/indexSegundo01.gif" alt="">
-    <img class="index__header-img02" src="./img/indexSegundo02.gif" alt="">
+    <img class="index__header-img01" src="./assets/indexSegundo01.gif" alt="">
+    <img class="index__header-img02" src="./assets/indexSegundo02.gif" alt="">
+    <img class="index__header-img03" src="./assets/indexCuarto01.jpg" alt="">
+    <img class="index__header-img04" src="./assets/indexCuarto03.jpg" alt="">
+    <img class="index__header-img05" src="./assets/indexCuarto02.jpg" alt="">
     <!-- navbar -->
     <div class="container__index-nav">
         <nav class="navbar navbar-expand-lg navbar__modificada">
-            <a class="navbar__modificada-brand" href="index.html">Spencer</a>
+            <a class="navbar__modificada-brand" href="./index.html">proyecto <br> spencer</a>
             <div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -35,16 +38,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav navbar__modificada-links">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="./frontend.html">frontend</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="./ceramicas.html">cerámicas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#contact">contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -68,40 +68,48 @@
     </div>
 
     <section class="container__index-about">
-        <video src="./img/autorretratoLG.mp4" autoplay loop></video>
+        <video src="./assets/autorretratoLG.mp4" autoplay loop></video>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum eius voluptatem tempore. Modi quos non totam, dignissimos, quo ipsum, accusamus adipisci nemo nulla similique ad necessitatibus. Alias quos quibusdam, nihil accusamus veniam obcaecati illo suscipit sit eum sequi commodi voluptatibus!</p>
     </section>
 
     <section class="container__index-bannerImg">
-        <img src="./img/indexTercer01.jpg" alt="">
-        <img src="./img/indexTercer02.jpg" alt="">
-        <img src="./img/indexTercer03.jpg" alt="">
-        <img src="./img/indexTercer04.jpg" alt="">
+        <img src="./assets/indexTercer01.jpg" alt="">
+        <img src="./assets/indexTercer02.jpg" alt="">
+        <img src="./assets/indexTercer03.jpg" alt="">
+        <img src="./assets/indexTercer04.jpg" alt="">
     </section>
-
+    <section class="container__index-marquee">
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            let's
+        </marquee>
+        <marquee behavior="scroll" direction="right" scrollamount="10">
+            work
+        </marquee>
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            together
+        </marquee>
+    </section>
+    <form id="contact" class="container__index-form" method="post" action="./enviar.php">
+            <input type="text" name="nombre" placeholder="nombre" required="required">
+            <input type="email" name="email" id="" placeholder="email" required="required">
+            <label for="mensaje">MENSAJE</label>
+            <textarea name="message" id="" cols="50" rows="4" style="resize:none;"></textarea>
+            <button class="btn_propio" name="enviar" type="submit">ENVIAR</button>
+    </form>
+    <section class="btn_up">
+        <div>
+            <a href="#up"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+            <g><path d="M500.3,767.3L990,277.6l-44.9-44.9L500,677.8L54.9,232.7L10,277.6l489.7,489.7l0.3-0.3L500.3,767.3z"/></g></svg>
+            </a>
+        </div>
+    </section>
     <footer>
-        <form class="container__index-form" action="get">
-            <h2>lets work together</h2>
-            <label for="name">nombre</label>
-            <input type="text">
-            <label for="email">mail</label>
-            <input type="email" name="mail" id="">
-            <label for="message">mensaje</label>
-            <textarea name="message" id="" cols="50" rows="6" style="resize:none;"></textarea>
-            <input class="form-btn" type="submit" value="enviar"/>
-        </form>
         <div class="container__index-rrss">
             <a href="https://www.linkedin.com/in/camilamunoz-frontend/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="https://vimeo.com/britanyspencer" target="_blank"><i class="fa-brands fa-vimeo-v"></i></a>
             <a href="https://github.com/cmmanriquez" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
-
-
-
-
-
-
 
     <!-- BS JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
