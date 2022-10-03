@@ -32,11 +32,6 @@ html{
 /* ------------index------------ */
 
 /* --------navbar-------- */
-.container__index-header{
-    background-image: url(../assets/cover.jpg);
-    background-size: cover;
-    height: 100vh;
-}
 .navbar__modificada-brand{
     font-size: 24px;
     font-weight: 200;
@@ -76,8 +71,7 @@ html{
     color: black;
 }
 .navbar__modificada div ul li a:focus{
-    color: rgb(0, 255, 0);
-    border-bottom: 1px solid rgb(0, 255, 0);
+    color: #000;
 }
 .navbar__toggler-modificado{
     border: none;
@@ -93,66 +87,30 @@ html{
     text-decoration: line-through;
 }
 .material-symbols-modificado{
-    font-size: 48px;
+    font-size: 40px;
 }
-/* --------img index-------- */
-.index__header-img01{
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    opacity: 0;
-}
-.index__header-img02{
-    position: absolute;
-    top: 20%;
-    right: 12%;
-    opacity: 0;
-}
-.index__header-img03{
-    position: absolute;
-    top: 50%;
-    right: 40%;
-    opacity: 0;
-}
-.index__header-img04{
-    position: absolute;
-    bottom: 12%;
-    left: 5%;
-    opacity: 0;
-    width: 350px;
-}
-.index__header-img05{
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-    opacity: 0;
-    width: 350px;
-}
-
-.index__header-img01:hover, .index__header-img02:hover,
-.index__header-img03:hover, .index__header-img04:hover,
-.index__header-img05:hover{
-    opacity: 1;
-    cursor: none;
-}
-
 /* --------txt wave-------- */
 .container__index-waveAnimation{
-    margin: 150px 0;
+    margin-top: 30vh;
 }
 .container__index-waveAnimation svg text textPath{
     font-family: 'Cormorant Infant', serif;
 }
+
+/* --------img animation-------- */
+
+
 
 /* --------about-------- */
 .container__index-about{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 150px;
+    margin: 450px 0 150px 0;
 }
 .container__index-about video{
     margin-left: 60px;
+    border: 1px solid #000;
 }
 .container__index-about p{
     font-size: 30px;
@@ -161,13 +119,57 @@ html{
     padding: 0 70px;
 }
 
-/* --------banner imágenes-------- */
-.container__index-bannerImg{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+/* --------banner animacion-------- */
+.container-index-animacionImg{
+    transform: perspective(1000px) rotate(-90deg);
+    width: 200px;
+    height: 300px;
+    transform-style:preserve-3d;
+    margin: 200px auto;
+}
+.container-index-animacionImg div{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transform-style:preserve-3d;
+    animation: animate 10s linear infinite;
+    border: 1px solid #000;
+}
+  .container-index-animacionImg div img{
+    position:absolute;
+    top: 0;
+    left:0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+}
+.container-index-animacionImg div img:nth-child(1){
+    transform: rotateX(0deg);
+}
+.container-index-animacionImg div img:nth-child(2){
+    transform: rotateX(45deg);
+}
+.container-index-animacionImg div img:nth-child(3){
+    transform: rotateX(-45deg)
+}
+.container-index-animacionImg div img:nth-child(4){
+    transform: rotateX(90deg);
+}
+@keyframes animate{
+    0%{
+      transform:perspective(1000px) rotateX(0deg);
+    }
+    100%{
+      transform:perspective(1000px) rotateX(360deg);
+    }
+}
+.hello{
+    width: 200px;
+    height: 300px;
+    clear: both;
 }
 
 /* --------marquee-------- */
@@ -267,7 +269,7 @@ html{
 /* --------containers-------- */
 .separator{
     border-bottom: 1px solid black;
-    width: 80%;
+    width: 95%;
     margin: 50px auto;
 }
 .container__web-main h1{
@@ -278,20 +280,33 @@ html{
     text-align: center;
     margin-top: 120px;
 }
+.container__web-main{
+    margin: 0 50px;
+}
+.container__web-main section div h2{
+    font-family: 'Inter Tight';
+    font-size: 18px;
+    font-weight: 400;
+}
+.container__web-main section div p{
+    font-family: 'Inter Tight';
+    font-weight: 300;
+}
+.container__web-main section div{
+   margin-left: 50px;
+   padding: 0 30px;
+}
 .lmy, .las-celebraciones, .arrepentida{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
 }
-.lmy p, .las-celebraciones p, .arrepentida p{
-    font-family: 'Inter Tight';
-    width: 50%;
-    padding: 0 30px;
+.lmy a video, .las-celebraciones a video, .arrepentida a video{
+    border: #000 1px solid;
+    max-width: 500px;
 }
 .arrepentida{
     margin-bottom: 50px;
 }
-
-
 /* ------------cerámica------------ */
 
 /*--------h1--------*/
@@ -340,11 +355,8 @@ html{
 
 /* ------------ty------------ */
 .simbolo-volver{
-    font-size: 34px;
-    transform: rotateY(180deg);
-    color: rgb(211, 75, 122);
-    border: 3px solid rgb(211, 75, 122);
-    border-radius: 50%;
+    font-size: 44px;
+    color: black;
     padding: 5px;
     margin: 5px 0 0 5px;
 }
@@ -413,5 +425,33 @@ html{
 }
 
 
+
+
+/* animación index */
+#faux-gif {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 400px;
+    height: 600px;
+    /* animation: giffy 0.5s infinite linear; */
+    /* no fade between frames */
+    animation: giffy 0.6s infinite steps(1);
+}
+#faux-gif:hover {
+    animation-play-state:paused;
+}
+@keyframes giffy {
+    0%   { background-image: url('../assets/ig01.png'); } 
+    15%  { background-image: url('../assets/ig02.png'); }
+    30%  { background-image: url('../assets/matrix.jpg');}
+    45%  { background-image: url('../assets/ig04.png'); }
+    60%  { background-image: url('../assets/ig05.png'); }
+    75%  { background-image: url('../assets/ig07.png'); }
+    90%  { background-image: url('../assets/ig06.png'); }
+}
 
 
