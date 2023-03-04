@@ -10,6 +10,10 @@ html{
     background-image: url(../assets/bg.jpeg);
     background-size: cover;
 }
+#index{
+    position: absolute;
+    top: 0;
+}
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
@@ -133,27 +137,29 @@ html{
 .container__index-waveAnimation svg text textPath{
     font-family: 'Cormorant Infant', serif;
 }
-
+/* --------titulos-------- */
+#container__frontend h2,
+#container__art h2{
+    color: #232323;
+    font-size: 110px;
+    font-family: 'Belleza', sans-serif;
+    text-shadow: 1px 1px 2px  rgb(141, 237, 141);
+}
 /* --------frontend-------- */
 #container__frontend{
-    margin-top: 500px;
+    margin-top: 420px;
+    padding-top: 80px;
 }
 #container__frontend div img:hover{
     cursor:grabbing;
 }
 #container__frontend .cfront-one h2{
-    margin-left: 60px;
+    margin-left: 140px;
     margin-top: 100px;
 }
 #container__frontend .cfront-two h2{
-    margin-left: 290px;
+    margin-left: 200px;
     margin-top: -90px;
-}
-#container__frontend .cfront-one h2, #container__frontend .cfront-two h2{
-    color: #232323;
-    font-size: 110px;
-    font-family: 'Belleza', sans-serif;
-    text-shadow: 1px 1px 2px  rgb(141, 237, 141);
 }
 #container__frontend .cfront-one{
     display: grid;
@@ -167,11 +173,11 @@ html{
 }
 #container__frontend .cfront-one div:nth-child(2){
     margin-top: 0px;
-    margin-left: 150px;
+    margin-left: 240px;
 }
 #container__frontend .cfront-one div:nth-child(3){
     margin-top: 40px;
-    margin-left: 80px;
+    margin-left: 120px;
 }
 #container__frontend .cfront-two{
     display: grid;
@@ -180,20 +186,71 @@ html{
 #container__frontend .cfront-two div:nth-child(2){
     margin-top: 100px;
 }
+#container__frontend .cfront-two div:nth-child(3){
+    margin-top: 160px;
+    margin-left: 50px;
+}
 #container__frontend .cfront-three a img{
-    margin-left: 100px;
+    margin-left: 160px;
+    margin-top: -70px;
+}
+/* --------art-------- */
+/* cerámica */
+#container__art{
+    margin-top: 150px;
+    padding-top: 50px;
+}
+#container__art #ceramicas .cArt-one{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 1fr;
+}
+#container__art #ceramicas h2{
+    margin-left: 140px;
+}
+#container__art #ceramicas .cArt-one img{
+    max-width: 200px;
+}
+#container__art #ceramicas .cArt-one div:nth-child(1){
+    margin-left: 220px;
+    margin-top: 100px;
+}
+#container__art #ceramicas .cArt-one div:nth-child(2){
+    margin-left: 370px;
+    margin-top: -60px;
+}
+#container__art #ceramicas .cArt-one div:nth-child(3){
+    margin-left: 70px;
+    margin-top: 100px;
+}
+#container__art #ceramicas .cArt-one div img,  #container__art #ceramicas div video{
+    box-shadow: 1px 1px 2px 1px rgba(68, 121, 66, 0.2);
+}
+#container__art #ceramicas .cArt-two{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    grid-template-rows: 1fr;
+}
+#container__art #ceramicas .cArt-two h2{
+    margin-top: -160px;
+    margin-left: 300px;
+}
+#container__art #ceramicas .cArt-two div:nth-child(1){
+    margin-left: 70px;
+    margin-top: 60px;
+}
+#container__art #ceramicas .cArt-two div:nth-child(3){
+    margin-top: 80px;
 }
 /* --------about-------- */
 .container__index-about{
-    margin-top: 300px;
+    margin-top: 50px;
+    padding-top: 200px;
 }
 .container__index-about div p{
     font-family: 'Inter Tight', sans-serif;
     font-size: 15px;
 }
-
-/* --------banner animacion circular-------- */
-
 
 
 /* --------banner animacion de img-------- */
@@ -254,7 +311,7 @@ html{
     font-size: 36px;
     font-family: 'Spectral';
     font-weight: 300;
-    margin-top: 70px;
+    margin-top: 130px;
     padding-top: 60px;
 }
 
@@ -326,69 +383,8 @@ html{
     padding: 10px 0;
 }
 .container__index-rrss i:hover{
-    color: rgb(0, 255, 0);
+    color: rgb(141, 237, 141);
 }
-
-/* --------BTN UP-------- */
-.btn_up{
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 30px 30px 0;
-}
-.btn_up div a span{
-    transform: rotate(-90deg);
-    color: #232323;
-    font-size: 34px;
-}
-
-/* ------------frontend------------ */
-
-
-/* ------------cerámica------------ */
-
-/*--------h1--------*/
-.container__ceramica-h1{
-    font-family: 'Spectral';
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 46px;
-    text-align: center;
-    margin-top: 120px;
-}
-/* --------ig-------- */
-.container__ceramica-main-ig{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    row-gap: 10px;
-}
-.container__ceramica-main-ig div{
-    overflow: hidden;
-    padding: 0;
-    width: 350px;
-    height: 350px;
-}
-.container__ceramica-main-ig img {
-    transition-duration: 2s;
-    margin: 0 auto;
-    display: block;
-}
-.container__ceramica-main-ig img:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-}
-
-/* --------video-------- */
-.container__ceramica-main-videos{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 100px 0;
-}
-
 
 /* ------------ty------------ */
 .simbolo-volver{
@@ -430,36 +426,10 @@ html{
         margin: 10px 0;
     }
 
-    /* ------------frontend------------ */
-    .container__web-main section{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .container__web-main section a{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container__web-main section p{
-        margin-top: 20px;
-        width: 90%;
-    }
-
     /* ------------ty------------ */
     .container__ty img{
         width: 90%;
     };
-}
-
-@media screen and (min-width: 320px) and (max-width: 799px) {
-    /* ------------frontend------------ */
-    .container__web-main section a video{
-        width: 90%;
-    }
-
 }
 @media screen and (min-width: 576px) {
     /* ------------navbar------------  */
@@ -471,6 +441,76 @@ html{
     /* ------------navbar------------  */
     .container__index-nav-desktop{
         display: none;
+    }
+    /* ------------frontend------------  */
+    #container__frontend .cfront-one{
+        grid-template-columns: 100%;
+        grid-template-rows: 0.5fr 1fr 1fr;
+    }
+    #container__frontend .cfront-one h2, #container__frontend .cfront-two h2{
+        font-size: 60px;
+        margin: 0;
+    }
+    #container__frontend .cfront-one h2, #container__frontend .cfront-two h2{
+        margin-left: 30px;
+    }
+    #container__frontend .cfront-one div:nth-child(2), 
+    #container__frontend .cfront-one div:nth-child(3),
+    #container__frontend .cfront-two div:nth-child(2), 
+    #container__frontend .cfront-two div:nth-child(3),
+    #container__frontend .cfront-three div{
+        margin: 0;
+    }
+    #container__frontend div a img{
+        max-width: 200px;
+    }
+    #container__frontend .cfront-two{
+        grid-template-columns: 100%;
+        grid-template-rows: 0.5fr 1fr 1fr;
+    }
+    #container__frontend .cfront-one div:nth-child(2){
+        margin-left: 120px;
+    }
+    #container__frontend .cfront-one div:nth-child(3){
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    #container__frontend .cfront-two div:nth-child(2){
+        margin-left: 180px;
+    }
+    #container__frontend .cfront-two div:nth-child(3){
+        margin-left: 80px;
+        margin-top: 20px;
+    }
+    #container__frontend .cfront-three a img{
+        margin-left: 150px;
+        margin-top: 40px;
+    }
+
+    /* CONTAINER ABOUT */
+    .container__index-about{
+        margin-top: 80px;
+        padding: 0;
+    }
+    #about div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #about div div img{
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+    #about div p{
+        padding: 0 10px 0 30px;
+        font-size: 13px;
+    }
+    .container__index-marquee{
+        padding: 0;
+    }
+    .container__index-form{
+        width: 85%;
     }
 }
 

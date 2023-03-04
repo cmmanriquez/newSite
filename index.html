@@ -27,6 +27,9 @@
     <title>Proyecto Spencer | Art & Web developing</title>
 </head>
 <body class="body__index">
+    <div id="index">
+
+    </div>
 
     <!-- gif -->
     <div id="faux-gif"></div>
@@ -35,11 +38,11 @@
     <div class="container-fluid container__index-nav-desktop fixed-top">
         <nav class="row">
             <ul class="col-3">
-                <li><a class="navbar__modificada-brand" href="">Britany <br>Spencer</a></li>
-                <li><a class="nav-mine" href="">frontend</a></li>
-                <li><a class="nav-mine" href="">art projects</a></li>
-                <li><a class="nav-mine" href="">about</a></li>
-                <li><a class="nav-mine" href="">contact</a></li>
+                <li><a class="navbar__modificada-brand" href="#index">Britany <br>Spencer</a></li>
+                <li><a class="nav-mine" href="#container__frontend">frontend</a></li>
+                <li><a class="nav-mine" href="#container__art">art projects</a></li>
+                <li><a class="nav-mine" href="#about">about</a></li>
+                <li><a class="nav-mine" href="#contact">contacto</a></li>
             </ul>
         </nav>
     </div>
@@ -82,52 +85,79 @@
             </svg>
         </div>
     </section>
+    <main>
+        <section id="container__frontend">
+            <div class="cfront-one">
+                <h2>PROYECTOS</h2>
+                <div>
+                    <a href="https://www.arrepentida.com" target="_blank"><img src="./assets/arrepentida.jpg" alt="proyecto que desarrollé: imagen que lleva al sitio web de arrepentida.com"></a>
+                </div>
+                <div>
+                    <a href="https://www.clselect.com.ar" target="_blank"><img src="./assets/clselect.jpg" alt="proyecto que desarrollé: imagen que lleva al sitio web de clselect.com.ar"></a>
+                </div>
+            </div>
+            <div class="cfront-two">
+                <h2>WEB</h2>
+                <div>
+                    <a href="https://www.lascelebraciones.com" target="_blank"><img src="./assets/lascelebraciones.jpg" alt="proyecto que desarrollé: imagen que lleva al sitio web de lascelebraciones.com"></a>
+                </div>
+                <div>
+                    <a href="https://www.limaydenim.com" target="_blank"><img src="./assets/limay.jpg" alt="proyecto que desarrollé: imagen que lleva al sitio web de limay.com"></a>
+                </div>
+            </div>
+            <div class="cfront-three">
+                <a href="https://www.lucilasafdie.com" target="_blank"><img src="./assets/lucilasafdie.jpg" alt="proyecto que desarrollé: imagen que lleva al sitio web de lucilasafdie.com"></a>
+            </div>
+        </section>
 
-    <section id="container__frontend">
-        <div class="cfront-one">
-            <h2>ALGUNOS</h2>
-            <div data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom">
-                <a href=""><img src="./assets/arrepentida.jpg" alt=""></a>
-            </div>
-            <div data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom">
-                <a href=""><img src="./assets/clselect.jpg" alt=""></a>
-            </div>
-        </div>
-        <div class="cfront-two">
-            <h2>TRABAJOS</h2>
-            <div>
-                <a href=""><img src="./assets/lascelebraciones.jpg" alt=""></a>
-            </div>
-            <div>
-                <a href=""><img src="./assets/limay.jpg" alt=""></a>
-            </div>
-        </div>
-        
-        <div class="cfront-three">
-            <a href=""><img src="./assets/lucilasafdie.jpg" alt=""></a>
-        </div>
+        <!-- art project -->
 
-
-    </section>
-
-    <!-- about -->
-    <main class="container-fluid container__index-about">
-        <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-6 col-12 justify-content-md-center justify-content-xs-center">
-                <img src="https://dummyimage.com/300x400/000" alt="">
+        <!-- cerámicas -->
+        <section id="container__art">
+            <div id="ceramicas">
+                <h2>SOME</h2>
+                <div class="cArt-one">
+                    <div>
+                        <img src="./assets/arcillaRoja.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/ig03.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/frutera.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="cArt-two">
+                    <div>
+                        <video width="320"autoplay loop>
+                            <source src="./assets/destroy.mp4" type="video/mp4">
+                            <source src="./assets/destroy.ogg" type="video/ogg">
+                            Tu navegador no te permite ver el video.
+                          </video>
+                    </div>
+                    <h2>WORKS</h2>
+                    <div>
+                        <video width="250" autoplay loop>
+                            <source src="./assets/jarron.mp4" type="video/mp4">
+                            <source src="./assets/jarron.ogg" type="video/ogg">
+                        </video>
+                    </div>
+                </div>
+            </div>  
+            <!-- about -->
+            <div id="about" class="container-fluid container__index-about">
+                 <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-3 col-md-6">
+                        <img src="https://dummyimage.com/300x400/000" alt="">
+                    </div>
+                    <p class="col-lg-3 col-md-4">Artista plástica de formación, Licenciada por la UNLP con orientación en Grabado y Arte Impreso.<br>Con algunos baches creativos...intento mantenerme siempre cerca del arte del modo que pueda.
+                    </p>
+                    <p class="col-lg-3 col-md-4">Actualmente trabajando como profesora de desarrollo web. 
+                    <br> <br> Me desempeño como freelance desarrollando proyectos web.</p>
+                </div>
             </div>
-            <p class="col-lg-3 col-md-4 col-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum eius voluptatem tempore. Modi quos non totam, dignissimos, quo ipsum, accusamus adipisci nemo nulla similique ad necessitatibus. Alias quos quibusdam, nihil accusamus veniam obcaecati illo suscipit sit eum sequi commodi voluptatibus!</p>
-            <p class="col-lg-3 col-md-4 col-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate cum sapiente, quia id, consequatur ipsa impedit dolorum dicta, quisquam velit officia totam. Repellat, similique. Velit eaque totam deleniti iste accusantium dolorem tempora dolore unde, aliquid temporibus quidem. Soluta magni, debitis illum beatae eos voluptatem pariatur iste laborum quos laboriosam qui culpa architecto cupiditate exercitationem, itaque quod obcaecati veniam enim voluptas.</p>
-        </div>
+        </section>    
     </main>
-
-
-    <!-- animación circular -->
-    <section class="container__index-animationCir">
-        
-    </section>
 
     <!-- marquee -->
     <section class="container__index-marquee">
@@ -150,12 +180,6 @@
             <textarea name="mensaje" id="mensaje" cols="50" rows="4" style="resize:none;"></textarea>
             <button class="btn_propio" name="enviar" type="submit">ENVIAR</button>
     </form>
-    <section class="btn_up">
-        <div>
-            <a href="#up"><span class="material-symbols-outlined">arrow_forward_ios</span>
-            </a>
-        </div>
-    </section>
 
     <!-- footer -->
     <footer>
