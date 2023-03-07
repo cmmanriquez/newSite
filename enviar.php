@@ -13,10 +13,10 @@ $mensaje .= "Su e-mail es: " . "$email" . " \r\n";
 $mensaje .= "Mensaje: " . "$_POST['mensaje']" . " \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-$para = 'hello@proyectospencer.com';
+$para = 'hola@proyectospencer.com';
 $asunto = 'Mensaje desde la web';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
-header("Location:ty.html");
+header("Location:./ty.html");
 ?>
